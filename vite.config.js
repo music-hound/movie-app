@@ -11,6 +11,7 @@ export default defineConfig({
       manifest: {
         name: 'Movie-app PWA',
         short_name: 'Movie-app',
+        theme_color: '#000000',
       },
     })
   ],
