@@ -31,7 +31,7 @@ export default function CardLayout(){
         {
         url = `https://api.themoviedb.org/3/search/movie?query=${search_input}&include_adult=true&language=${lang}&page=${page}`;
       } else {
-        url = `https://api.themoviedb.org/3/discover/movie?include_adult=true&include_video=false&language=${lang}&page=${page}&primary_release_date.gte=${years[0]}-01-01&primary_release_date.lte=${years[1]}-12-31&sort_by=${sort}.${isDescending ? 'desc' : 'asc'}&with_genres=${genreIdsList}`
+        url = `https://api.themoviedb.org/3/discover/movie?include_video=false&language=${lang}&page=${page}&primary_release_date.gte=${years[0]}-01-01&primary_release_date.lte=${years[1]}-12-31&sort_by=${sort}.${isDescending ? 'desc' : 'asc'}&with_genres=${genreIdsList}`
       }
 
         const options = {
